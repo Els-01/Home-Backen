@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Galerie</title>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script>
+		
+	
+	</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <h1>Galerie</h1>
+  </header>
+  <h1>Torte</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <h2>Kuchen</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <div id="content">
+    <div class="row">
+		
+      <div class="column">
+        <img alt="" src="img/cake.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+		
+      <div class="column">
+        <img alt="" src="img/cakes.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img alt="" src="img/berries.jpg"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img alt="" src="img/dessert.jpg"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img alt="" src="img/desserts.jpg"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img alt="" src="img/kuchen.jpg"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+		
+		      <div class="column">
+        <img alt="" src="img/cake.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+		
+		      <div class="column">
+        <img alt="" src="img/cakes.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+    </div>
+	  
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">
+            1 / 6
+          </div>
+          <img src="img/cake.jpg"   alt="">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">
+            2 / 6
+          </div>
+          <img src="img/cakes.jpg"  alt="">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">
+            3 / 6
+          </div>
+          <img src="img/berries.jpg"  alt="">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">
+            4 / 6
+          </div>
+          <img src="img/dessert.jpg"  alt="">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">
+            5 / 6
+          </div>
+          <img src="img/desserts.jpg" style="width:100%" alt="">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">
+            6 / 6
+          </div>
+          <img src="img/kuchen.jpg" style="width:100%" alt="">
+        </div>
+		  
+		  <div class="mySlides">
+          <div class="numbertext">
+            7 / 7
+          </div>
+          <img src="img/cake.jpg"   alt="">
+        </div>
+		  
+		  <div class="mySlides">
+          <div class="numbertext">
+            8 / 8
+          </div>
+          <img src="img/cakes.jpg"  alt="">
+        </div>
+		  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/cake.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cake">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/cakes.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cakes">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/berries.jpg" style="width:100%" onclick="currentSlide(3)" alt="Barries">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/dessert.jpg" style="width:100%" onclick="currentSlide(4)" alt="Dessert">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/desserts.jpg" style="width:100%" onclick="currentSlide(5)" alt="Desserts">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/kuchen.jpg" style="width:100%" onclick="currentSlide(6)" alt="Kuchen">
+        </div>
+		  
+		  <div class="column">
+          <img class="demo cursor" src="img/cake.jpg" style="width:100%" onclick="currentSlide(7)" alt="Cake">
+        </div>
+		          <div class="column">
+          <img class="demo cursor" src="img/cakes.jpg" style="width:100%" onclick="currentSlide(8)" alt="Cakes">
+        </div>
+		  
+      </div>
+    </div>
+    <script>
+     function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+       </script>
+  </div>
+</div>
+<script>
+	//var anzbilder = 7;
+	var anzbilder = $("#content .column").length/2;
+	alert(anzbilder);
+	
+
+		var prozent = 100/anzbilder;
+		$("#content .column").css("width", prozent + "%");
+		
+	</script>
+</body>
+</html>
